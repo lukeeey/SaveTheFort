@@ -54,7 +54,7 @@ h1 {
 @media screen and (max-width: 768px) {
     .announcement {
         padding: 8px 15px;
-        
+
     }
 
     .announcement-text {
@@ -70,6 +70,22 @@ h1 {
     max-height: 100vh;
     object-fit: cover;
 }
+
+.header-bg-image {
+    width: 100%;
+    height: 100vh;
+    background-image: url(media/fort.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@supports (-webkit-touch-callout: inherit) {
+    .header-bg-image {
+        background-attachment: scroll;
+    }
+}
+
 
 .header-text {
     padding: 20px;
@@ -305,7 +321,7 @@ footer a {
     .help-item h2 {
         font-size: 22px;
     }
-    
+
     .help-item p {
         font-size: 20px;
     }
